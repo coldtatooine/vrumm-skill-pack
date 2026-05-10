@@ -7,15 +7,9 @@ Automatizar fluxo final: commit, push e abertura de PR para a base escolhida.
 Antes de qualquer coisa, rodar este comando para exibir o banner animado:
 
 ```bash
-printf '\033[1;33m\n'
-printf '  🏎️  \033[1;31mV R U M M  G O !\033[0m\n'
-printf '\033[1;33m'
-printf '  ==========================================\n'
-printf '        ______\n'
-printf '       /|_||_\`.__    \033[1;37m commit › push › PR \033[1;33m\n'
-printf '      (   _    _ _\  \n'
-printf '      =`-(_)--(_)-'"'"'  \033[0m\n'
-printf '\033[1;33m  ==========================================\033[0m\n\n'
+printf '\033[1;33m  ════════════════════════════════════\033[0m\n'
+printf '\033[1;31m  🏎️  💨  V R U M M   G O !  \033[1;37mcommit › push › PR\033[0m\n'
+printf '\033[1;33m  ════════════════════════════════════\033[0m\n\n'
 ```
 
 ## Passo 1 — Verificar estado
@@ -88,12 +82,9 @@ git push -u origin HEAD
 Após push bem-sucedido, exibir banner de encerramento:
 
 ```bash
-printf '\n\033[1;32m'
-printf '  ╔══════════════════════════════════════╗\n'
-printf '  ║  🏆  PUSH FEITO! MISSÃO CUMPRIDA!  🏆 ║\n'
-printf '  ║                                      ║\n'
-printf '  ║   VRUMM VRUMM! 🏎️  💨  main!        ║\n'
-printf '  ╚══════════════════════════════════════╝\033[0m\n\n'
+printf '\033[1;32m  ════════════════════════════════════\033[0m\n'
+printf '\033[1;32m  🏆  PUSH FEITO! VRUMM VRUMM! 🏎️  💨\033[0m\n'
+printf '\033[1;32m  ════════════════════════════════════\033[0m\n\n'
 ```
 
 Encerrar. Não abrir PR.
@@ -131,12 +122,9 @@ gh pr create --base <base-escolhida> --title "<mensagem-do-commit>" --body ""
 Após criar PR com sucesso, exibir a URL e o banner final:
 
 ```bash
-printf '\n\033[1;32m'
-printf '  ╔══════════════════════════════════════╗\n'
-printf '  ║  🏆  PR ABERTO! MISSÃO CUMPRIDA!  🏆  ║\n'
-printf '  ║                                      ║\n'
-printf '  ║   VRUMM VRUMM! 🏎️  💨               ║\n'
-printf '  ╚══════════════════════════════════════╝\033[0m\n\n'
+printf '\033[1;32m  ════════════════════════════════════\033[0m\n'
+printf '\033[1;32m  🏆  PR ABERTO! MISSÃO CUMPRIDA! 🏎️  💨\033[0m\n'
+printf '\033[1;32m  ════════════════════════════════════\033[0m\n\n'
 ```
 
 Exibir a URL do PR criado ao usuário em destaque:
