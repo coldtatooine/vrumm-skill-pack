@@ -66,7 +66,41 @@ Após commit bem-sucedido:
 printf '\033[1;35m  ✅ COMMIT feito! Carimbo no passaporte!\033[0m\n'
 ```
 
-## Passo 5 — Push
+## Passo 5 — Verificar branch atual
+
+Antes do push, checar a branch atual:
+
+```bash
+git branch --show-current
+```
+
+**Se a branch for `main` ou `master`:** pular Passos 6 e 7 completamente. Usar `AskUserQuestion` para perguntar:
+- **Sim** — fazer push
+- **Não** — encerrar aqui
+
+Se o usuário confirmar push:
+
+```bash
+printf '\033[1;34m  🚀 Mandando direto pro origin/main...\033[0m\n'
+git push -u origin HEAD
+```
+
+Após push bem-sucedido, exibir banner de encerramento:
+
+```bash
+printf '\n\033[1;32m'
+printf '  ╔══════════════════════════════════════╗\n'
+printf '  ║  🏆  PUSH FEITO! MISSÃO CUMPRIDA!  🏆 ║\n'
+printf '  ║                                      ║\n'
+printf '  ║   VRUMM VRUMM! 🏎️  💨  main!        ║\n'
+printf '  ╚══════════════════════════════════════╝\033[0m\n\n'
+```
+
+Encerrar. Não abrir PR.
+
+---
+
+**Se a branch NÃO for `main`/`master`:** seguir fluxo normal abaixo.
 
 ```bash
 printf '\033[1;34m  🚀 Acelerando pro origin...\033[0m\n'
