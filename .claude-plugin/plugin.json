@@ -1,0 +1,5 @@
+{
+  "name": "vrumm",
+  "version": "1.0.0",
+  "description": "Automatiza criação de branch de trabalho (fix/feat) a partir de upstream/staging ou upstream/main."
+}
