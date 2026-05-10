@@ -37,8 +37,10 @@ git commit -m "<mensagem-final>"
 ## Passo 5 — Push
 
 ```bash
-git push origin HEAD
+git push -u origin HEAD
 ```
+
+O `-u` define o tracking para `origin/<branch>`, necessário para `gh pr create` resolver o head corretamente.
 
 ## Passo 6 — Base do PR
 
