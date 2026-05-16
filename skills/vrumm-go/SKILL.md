@@ -6,6 +6,11 @@ description: >
   or asks to commit, push, and create a pull request.
 ---
 
+---
+name: vrumm-go
+description: Automatiza fluxo final: commit, push e abertura de PR para staging ou main.
+---
+
 # /vrumm-go — Commit › Push › PR
 
 Automatizar fluxo final: commit, push e abertura de PR para a base escolhida.

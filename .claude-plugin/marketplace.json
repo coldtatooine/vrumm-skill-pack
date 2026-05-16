@@ -1,10 +1,8 @@
 {
-  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "vrumm-skill-pack",
   "description": "Automates git branch creation (fix/feat) from upstream/staging or upstream/main, plus commit, push, and PR flow.",
   "owner": {
-    "name": "coldtatooine",
-    "url": "https://github.com/coldtatooine"
+    "name": "coldtatooine"
   },
   "plugins": [
     {

@@ -1,5 +1,12 @@
 {
   "name": "vrumm",
   "version": "1.0.0",
-  "description": "Automatiza criação de branch de trabalho (fix/feat) a partir de upstream/staging ou upstream/main."
+  "description": "Automatiza criação de branch de trabalho (fix/feat) a partir de upstream/staging ou upstream/main.",
+  "author": {
+    "name": "coldtatooine",
+    "url": "https://github.com/coldtatooine"
+  },
+  "homepage": "https://github.com/coldtatooine/vrumm-skill-pack",
+  "repository": "https://github.com/coldtatooine/vrumm-skill-pack",
+  "keywords": ["git", "branch", "pull-request", "workflow", "productivity"]
 }

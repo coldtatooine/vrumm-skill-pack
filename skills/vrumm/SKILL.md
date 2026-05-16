@@ -6,6 +6,11 @@ description: >
   or asks to create a working branch from upstream.
 ---
 
+---
+name: vrumm
+description: Cria nova branch de trabalho (fix- ou feat-) a partir de upstream/staging ou upstream/main.
+---
+
 # /vrumm — Nova Branch de Trabalho
 
 Criar nova branch a partir de upstream/staging ou upstream/main.
